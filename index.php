@@ -6,7 +6,7 @@ require 'vendor/autoload.php';
 //functionality here
 use fjgarlin\StravaImporter;
 
-$credentials = json_decode(file_get_contents('.cred'));
+$credentials = json_decode(file_get_contents('mark.cred'));
 $config = [
     'id' => $credentials->id,
     'secret' => $credentials->secret,
